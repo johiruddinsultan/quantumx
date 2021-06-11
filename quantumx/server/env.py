@@ -16,7 +16,6 @@ from aiorpcx import Service, ServicePart
 from quantumx.lib.coins import Coin
 from quantumx.lib.env_base import EnvBase
 
-
 class ServiceError(Exception):
     pass
 
