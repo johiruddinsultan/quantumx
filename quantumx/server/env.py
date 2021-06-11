@@ -1,4 +1,4 @@
-# Copyright (c) 2016, JUS
+# Copyright (c) 2016 , JUS
 #
 # All rights reserved.
 #
