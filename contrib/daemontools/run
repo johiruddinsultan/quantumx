@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Launching QuantumX server..."
+USERNAME=$(envdir ./env printenv USERNAME)
+QUANTUMX=$(envdir ./env printenv QUANTUMX)
+ulimit -n 4000 && exec 2>&1 envdir ./env envuidgid $USERNAME python3 $QUANTUMX

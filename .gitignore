@@ -1,0 +1,15 @@
+**/__pycache__/
+.cache/
+.pytest_cache/
+*/*~
+*.#*
+*#
+*~
+docs/_build
+/build
+/dist
+/quantumx.egg-info
+/e_x.egg-info
+.vscode/
+.mypy_cache/
+.idea/

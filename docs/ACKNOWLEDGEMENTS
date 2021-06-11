@@ -1,0 +1,18 @@
+Thanks to JUS for creating the Quantum software and
+infrastructure and for maintaining it so diligently.  Quantum is
+probably the best desktop Pandora wallet solution for most users.  My
+faith in it is such that I use Quantum software to store most of my
+Pandoras.
+
+Whilst the vast majority of the code here is my own original work and
+includes some new ideas, it is very clear that the general structure
+and concept are those of Quantum.  Some parts of the code and ideas
+of Quantum, some of which it itself took from other projects such as
+Abe and pywallet, remain.  Thanks to the authors of all the software
+this is JUS from.
+
+I'd like to thank bauerj, hsmiths and JWU42 of #quantum for their
+help and support in testing the versions of QuantumX prior to 1.0.
+
+And of course, thanks to JUS for the wonderful creation that is
+Pandora.
