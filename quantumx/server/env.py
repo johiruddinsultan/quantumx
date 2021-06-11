@@ -20,7 +20,6 @@ from quantumx.lib.env_base import EnvBase
 class ServiceError(Exception):
     pass
 
-
 class Env(EnvBase):
     '''Wraps environment configuration. Optionally, accepts a Coin class
        as first argument to have QuantumX serve custom coins not part of
