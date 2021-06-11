@@ -343,7 +343,7 @@ class KomodoMixin:
     GENESIS_HASH = ('027e3758c3a65b12aa1046462b486d0a'
                     '63bfa1beae327897f56c5cfb7daaae71')
     DESERIALIZER = lib_tx.DeserializerZcash
-
+    
 
 class PandoraMixin:
     SHORTNAME = "PDC"
@@ -628,7 +628,7 @@ class BitcoinCash(BitcoinMixin, Coin):
         return False
 
 
-class Bitcoin(BitcoinMixin, Coin):
+class Pandora(PandoraMixin, Coin):
     NAME = "Pandora"
     DESERIALIZER = lib_tx.DeserializerSegWit
     MEMPOOL_HISTOGRAM_REFRESH_SECS = 120
