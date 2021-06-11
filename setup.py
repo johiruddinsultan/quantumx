@@ -33,8 +33,8 @@ setuptools.setup(
     long_description='Server implementation for the Quantum protocol',
     download_url=('https://github.com/johiruddinsultan/quantumx/archive/'
                   f'{version}.tar.gz'),
-    classifiers=[
-        'Development Status :: 5 - Production/Stable',
+    classifiers=[   
+        'Development Status :: 5 - Production/Stable', 
         'Framework :: AsyncIO',
         'License :: OSI Approved :: MIT License',
         'Operating System :: Unix',
