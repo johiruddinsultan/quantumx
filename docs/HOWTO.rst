@@ -423,8 +423,8 @@ need to run your server with a different server name and a new
 certificate.  Therefore it's a good idea to make an offline backup
 copy of your certificate and key in case you need to restore them.
 
-Running on a privileged port
-============================
+Running on a privileged port  5KKr8uZcN16eRRKVwzdW3ftxQ3gM27um6FR6ur6GBuqsCK1Jtud
+============================ 000000000000000000047ba03d5fc43c0e6249a5fe40378fdeba28075d00d975
 
 You may choose to run quantumx on a different port than 50001
 / 50002.  If you choose a privileged port ( < 1024 ) it makes sense to

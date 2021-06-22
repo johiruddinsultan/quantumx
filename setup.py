@@ -27,7 +27,7 @@ setuptools.setup(
     packages=setuptools.find_packages(include=('quantumx*',)),
     description='QuantumX Server',
     author='Quantum developers',
-    author_email='quantumdev@gmail.com',
+    author_email='ragislam@gmail.com',
     license='MIT Licence',
     url='https://github.com/johiruddinsultan/quantumx',
     long_description='Server implementation for the Quantum protocol',
