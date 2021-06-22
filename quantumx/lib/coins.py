@@ -94,7 +94,7 @@ class Coin:
                     '3d08ede58bbd289255969bb664177ac2')
     GENESIS_ACTIVATION = 100_000_000
     # Peer discovery
-    PEER_DEFAULT_PORTS = {'t': '50001', 's': '50002'}
+    PEER_DEFAULT_PORTS = {'t': '70001', 's': '70002'}
     PEERS = []
     CRASH_CLIENT_VER = None
     BLACKLIST_URL = None
@@ -351,7 +351,6 @@ class PandoraMixin:
     XPUB_VERBYTES = bytes.fromhex("0488b21e")
     XPRV_VERBYTES = bytes.fromhex("0488ade4")
     RPC_PORT = 9332
-
 
 
 class BitcoinMixin:
