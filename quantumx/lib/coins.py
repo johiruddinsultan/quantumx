@@ -656,7 +656,7 @@ class Pandora(PandoraMixin, Coin):
             return 1
         if n <= 12:
             return n
-        if n == 25:  # so common that we make an exception for it
+        if n == 25:  # so common that we make an exception for it ok
             return n
         if n <= 48:
             return n // 2 * 2
