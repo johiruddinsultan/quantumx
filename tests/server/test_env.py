@@ -183,7 +183,7 @@ def test_bad_SERVICES():
     with pytest.raises(ServiceError) as err:
         Env()
     assert 'invalid service string' in str(err.value)
-    os.environ['SERVICES'] = 'xxx://foo.com:50001'
+    os.environ['SERVICES'] = 'xxx://foo.com:70001'
     with pytest.raises(ServiceError) as err:
         Env()
     assert 'unknown protocol' in str(err.value)

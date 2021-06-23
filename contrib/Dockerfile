@@ -23,7 +23,7 @@ RUN apt-get update \
         librocksdb5.17 libsnappy1v5 libbz2-1.0 zlib1g liblz4-1 \
     && rm -rf /var/lib/apt/lists/*
 
-ENV SERVICES="tcp://:50001"
+ENV SERVICES="tcp://:70001"
 ENV COIN=Pandora
 ENV DB_DIRECTORY=/var/lib/quantumx
 ENV DAEMON_URL="http://username:password@hostname:port/"
@@ -44,5 +44,5 @@ CMD ["/usr/src/app/venv/bin/python", "/usr/src/app/venv/bin/quantumx_server"]
 
 # build it with eg.: `docker build -t quantumx .`
 # run it with eg.:
-# `docker run -d --net=host -v /home/quantumx/db/:/var/lib/quantumx -e DAEMON_URL="http://youruser:yourpass@localhost:8332" -e REPORT_SERVICES=tcp://example.com:50001 quantumx`
+# `docker run -d --net=host -v /home/quantumx/db/:/var/lib/quantumx -e DAEMON_URL="http://youruser:yourpass@localhost:8332" -e REPORT_SERVICES=tcp://example.com:70001 quantumx`
 # for a clean shutdown, send TERM signal to the running container eg.: `docker kill --signal="TERM" CONTAINER_ID`
