@@ -737,8 +737,8 @@ class BitcoinGold(EquihashMixin, BitcoinMixin, Coin):
     REORG_LIMIT = 1000
     RPC_PORT = 8332
     PEERS = [
-        'quantumx-eu.bitcoingold.org s50002 t50001',
-        'quantumx-us.bitcoingold.org s50002 t50001'
+        'quantumx-eu.bitcoingold.org s70002 t70001',
+        'quantumx-us.bitcoingold.org s70002 t70001'
     ]
 
     @classmethod
@@ -766,9 +766,9 @@ class BitcoinGoldTestnet(BitcoinGold):
     GENESIS_HASH = ('00000000e0781ebe24b91eedc293adfe'
                     'a2f557b53ec379e78959de3853e6f9f6')
     PEERS = [
-        'test-node1.bitcoingold.org s50002',
-        'test-node2.bitcoingold.org s50002',
-        'test-node3.bitcoingold.org s50002'
+        'test-node1.bitcoingold.org s70002',
+        'test-node2.bitcoingold.org s70002',
+        'test-node3.bitcoingold.org s70002'
     ]
 
 
@@ -910,7 +910,7 @@ class BitcoinCashTestnet(BitcoinTestnetMixin, Coin):
     NAME = "BitcoinCash"
     PEERS = [
         'bch0.kister.net t s',
-        'testnet.imaginary.cash t50001 s50002',
+        'testnet.imaginary.cash t70001 s70002',
         'blackie.c3-soft.com t60001 s60002',
     ]
     BLOCK_PROCESSOR = block_proc.LTORBlockProcessor
@@ -946,7 +946,7 @@ class BitcoinTestnet(BitcoinTestnetMixin, Coin):
         'testnet.hsmiths.com t53011 s53012',
         'hsmithsxurybd7uh.onion t53011 s53012',
         'testnet.qtornado.com s t',
-        'testnet1.bauerj.eu t50001 s50002',
+        'testnet1.bauerj.eu t70001 s70002',
         'tn.not.fyi t55001 s55002',
         'bitcoin.cluelessperson.com s t',
     ]
@@ -1160,7 +1160,7 @@ class GravityCoin(Coin):
     TX_COUNT = 446050
     TX_COUNT_HEIGHT = 547346
     TX_PER_BLOCK = 2
-    PEER_DEFAULT_PORTS = {'t': '50001', 's': '50002'}
+    PEER_DEFAULT_PORTS = {'t': '70001', 's': '70002'}
     RPC_PORT = 29200
     REORG_LIMIT = 5000
     PEERS = []
@@ -1225,10 +1225,10 @@ class Namecoin(NameIndexMixin, AuxPowMixin, Coin):
     TX_PER_BLOCK = 10
     RPC_PORT = 8336
     PEERS = [
-        'quantum-nmc.le-space.de s50002',
+        'quantum-nmc.le-space.de s70002',
         'ex.lug.gs s446',
         'luggscoqbymhvnkp.onion t82',
-        'nmc.bitcoins.sk s50002',
+        'nmc.bitcoins.sk s70002',
         'ulrichard.ch s50006 t50005',
     ]
     BLOCK_PROCESSOR = block_proc.NameIndexBlockProcessor
@@ -2581,7 +2581,7 @@ class Zcoin(Coin):
     IRC_PREFIX = None
     RPC_PORT = 8888
     REORG_LIMIT = 5000
-    PEER_DEFAULT_PORTS = {'t': '50001', 's': '50002'}
+    PEER_DEFAULT_PORTS = {'t': '70001', 's': '70002'}
     MTP_HEADER_EXTRA_SIZE = 100
     MTP_HEADER_DATA_SIZE = 198864
     MTP_HEADER_DATA_START = Coin.BASIC_HEADER_SIZE + MTP_HEADER_EXTRA_SIZE
@@ -3256,7 +3256,7 @@ class RavencoinTestnet(Ravencoin):
     TX_COUNT_HEIGHT = 420500
     TX_PER_BLOCK = 1
     RPC_PORT = 18766
-    PEER_DEFAULT_PORTS = {'t': '50003', 's': '50004'}
+    PEER_DEFAULT_PORTS = {'t': '50003', 's': '70004'}
     REORG_LIMIT = 100
     PEERS = [
     ]
@@ -3439,8 +3439,8 @@ class Xaya(NameIndexMixin, AuxPowMixin, Coin):
     TRUNCATED_HEADER_SIZE = 80 + 5
     RPC_PORT = 8396
     PEERS = [
-        'seeder.xaya.io s50002',
-        'xaya.domob.eu s50002',
+        'seeder.xaya.io s70002',
+        'xaya.domob.eu s70002',
     ]
 
     # Op-codes for name operations

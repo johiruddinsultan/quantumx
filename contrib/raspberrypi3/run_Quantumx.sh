@@ -16,8 +16,8 @@ export DONATION_ADDRESS=your-donation-address
 
 # connectivity
 export HOST=
-export TCP_PORT=50001
-export SSL_PORT=50002
+export TCP_PORT=70001
+export SSL_PORT=70002
 
 # visibility
 export REPORT_HOST=hostname.com
