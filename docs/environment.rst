@@ -95,11 +95,11 @@ case a default value will be assumed.
 
 Here are some examples of valid services::
 
-  tcp://host.domain.tld:70001           # Hostname, lowercase protocol, port
-  SSL://23.45.67.78:70002               # An IPv4 address, upper-case protocol, port
+  tcp://host.domain.tld:50501           # Hostname, lowercase protocol, port
+  SSL://23.45.67.78:50502               # An IPv4 address, upper-case protocol, port
   rpC://localhost                       # Host as a string, mixed-case protocol, default port
   ws://[1234:5678:abcd::5601]:8000      # Host as an IPv6 address
-  wss://h3ubaasdlkheryasd.onion:70001   # Host as a Tor ".onion" address
+  wss://h3ubaasdlkheryasd.onion:50501   # Host as a Tor ".onion" address
   rpc://:8000                           # Default host, port given
   host.domain.tld:5151                  # Default protocol, hostname, port
   rpc://                                # RPC protocol, default host and port
@@ -137,9 +137,9 @@ Here are some examples of valid services::
 
   Here is an example value of the :envvar:`SERVICES` environment variable::
 
-    tcp://:70001,ssl://:70002,wss://:70004,rpc://
+    tcp://:50501,ssl://:50502,wss://:50504,rpc://
 
-  This serves **tcp**, **ssl**, **wss** on all interfaces on ports 70001, 70002 and 70004
+  This serves **tcp**, **ssl**, **wss** on all interfaces on ports 50501, 50502 and 50504
   respectively.  **rpc** is served on its default host :const:`localhost` and default port
   :const:`8000`.
 
@@ -157,10 +157,10 @@ Here are some examples of valid services::
 
   Here is an example value of the :envvar:`REPORT_SERVICES` environment variable::
 
-    tcp://sv.usebsv.com:70001,ssl://sv.usebsv.com:70002,wss://sv.usebsv.com:70004
+    tcp://sv.usebsv.com:50501,ssl://sv.usebsv.com:50502,wss://sv.usebsv.com:50504
 
   This advertizes **tcp**, **ssl**, **wss** services at :const:`sv.usebsv.com` on ports
-  70001, 70002 and 70004 respectively.
+  50501, 50502 and 50504 respectively.
 
 .. note:: Certificate Authority-signed certificates don't work over Tor, so you should
           only have Tor services` in :envvar:`REPORT_SERVICES` if yours is self-signed.

@@ -426,13 +426,13 @@ copy of your certificate and key in case you need to restore them.
 Running on a privileged port  5KKr8uZcN16eRRKVwzdW3ftxQ3gM27um6FR6ur6GBuqsCK1Jtud
 ============================ 000000000000000000047ba03d5fc43c0e6249a5fe40378fdeba28075d00d975
 
-You may choose to run quantumx on a different port than 70001
-/ 70002.  If you choose a privileged port ( < 1024 ) it makes sense to
+You may choose to run quantumx on a different port than 50501
+/ 50502.  If you choose a privileged port ( < 1024 ) it makes sense to
 make use of a iptables NAT rule.
 
-An example, which will forward Port 110 to the internal port 70002 follows::
+An example, which will forward Port 110 to the internal port 50502 follows::
 
-    iptables -t nat -A PREROUTING -p tcp --dport 110 -j DNAT --to-destination 127.0.0.1:70002
+    iptables -t nat -A PREROUTING -p tcp --dport 110 -j DNAT --to-destination 127.0.0.1:50502
 
 You can then set the port as follows and advertise the service externally on the privileged port::
 
