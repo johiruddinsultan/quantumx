@@ -170,6 +170,7 @@ class History:
         unflushed.clear()
         self.unflushed_count = 0
 
+        
         if self.db.for_sync:
             elapsed = time.monotonic() - start_time
             self.logger.info(f'flushed history in {elapsed:.1f}s '
